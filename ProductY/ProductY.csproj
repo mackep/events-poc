@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Client.csproj" />
+    <ProjectReference Include="..\Controller\Controller.csproj" />
+    <ProjectReference Include="..\Events.Handling.AzureServiceBus\Events.Handling.AzureServiceBus.csproj" />
+    <ProjectReference Include="..\Events.Infrastructure.AzureServiceBus\Events.Infrastructure.AzureServiceBus.csproj" />
+    <ProjectReference Include="..\Events.Sending.AzureServiceBus\Events.Sending.AzureServiceBus.csproj" />
+    <ProjectReference Include="..\Handlers\Handlers.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+</Project>

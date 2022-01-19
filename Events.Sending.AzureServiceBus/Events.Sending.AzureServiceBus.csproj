@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.5.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Events.Base\Events.Base.csproj" />
+    <ProjectReference Include="..\Events.Infrastructure.AzureServiceBus\Events.Infrastructure.AzureServiceBus.csproj" />
+    <ProjectReference Include="..\Events.Sending\Events.Sending.csproj" />
+  </ItemGroup>
+
+</Project>
